@@ -1,8 +1,17 @@
 import { memo, useState } from 'react';
 import './App.css';
-import { BaseIcon } from './BaseIcon';
+import iconList from './icon';
 
-const App = memo(({ iconList = [] }) => {
+const BaseIcon = memo((props) => {
+  const { className = '', name } = props;
+  return (
+    <svg className={`icon-wrapper ${className}`} aria-hidden="true">
+      <use xlinkHref={`#${name}`}></use>
+    </svg>
+  );
+});
+
+const App = memo(() => {
   const [color, setColor] = useState('#46bd87');
   const onChange = (event) => {
     setColor(event.target.value);

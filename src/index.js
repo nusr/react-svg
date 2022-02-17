@@ -3,11 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import iconList from './icon';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App iconList={iconList} />
+    <App />
   </React.StrictMode>,
   document.getElementById('root'),
 );
