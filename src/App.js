@@ -2,7 +2,7 @@ import { memo, useState } from 'react';
 import './App.css';
 import { BaseIcon } from './BaseIcon';
 
-const App = memo(({ iconList }) => {
+const App = memo(({ iconList = [] }) => {
   const [color, setColor] = useState('#46bd87');
   const onChange = (event) => {
     setColor(event.target.value);
