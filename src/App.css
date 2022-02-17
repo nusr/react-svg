@@ -1,0 +1,31 @@
+.github-arm {
+  transform-origin: 130px 106px;
+}
+.github-container {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 0px;
+  border: 0px;
+  right: 0px;
+  fill: rgb(70, 189, 135);
+}
+.color-picker {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 100px;
+  position: relative;
+}
+.color-picker-label {
+  padding-right: 10px;
+}
+.icons-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icons-container .icon-item {
+  text-align: center;
+  padding: 20px 0;
+  width: 33%;
+}
