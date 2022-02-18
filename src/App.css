@@ -32,6 +32,7 @@
 .icon-wrapper {
   width: 1em;
   height: 1em;
+  /* If currentColor is used as the value of the color property, it instead takes its value from the inherited value of the color property. */
   fill: currentColor;
   overflow: hidden;
 }

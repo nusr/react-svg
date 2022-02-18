@@ -14,7 +14,9 @@ module.exports = function override(config, env) {
     return typeof v.test === 'object' && String(v.test) === String(svgReg);
   });
   if (index > 0) {
+    // exclude default Svg loader
     ruleList[index].exclude = svgDir;
+    // add loader
     ruleList.splice(index, 0, params)
   }
   return config;

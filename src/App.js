@@ -1,5 +1,6 @@
 import { memo, useState } from 'react';
 import './App.css';
+// import all Svg files
 import iconList from './icon';
 
 const BaseIcon = memo((props) => {
